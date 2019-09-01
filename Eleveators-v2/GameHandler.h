@@ -7,6 +7,7 @@ class GameHandler {
 		GameLayer MainLayer;
 		GameLayer Background;
 		GameHandler();
+		~GameHandler();
 		void drawGame();
 };
 #endif

@@ -1,28 +1,31 @@
 #include "main.h"
-#include <SFML/Graphics.hpp>
-#include "GameHandler.h"
+#include <iostream>
+
+
+void setup() {
+	
+	shape.setFillColor(sf::Color::Green);
+}
+void draw() {
+	sf::Event event;
+	while (window.pollEvent(event))
+	{
+		if (event.type == sf::Event::Closed)
+			window.close();
+	}
+
+	window.clear();
+	handler.tick();
+	window.draw(shape);
+	window.display();
+}
 
 int main()
 {
-	GameHandler handler;
-	sf::RenderWindow window(sf::VideoMode(1920, 1080), "SFML works!");
-	sf::CircleShape shape(100.f);
-	shape.setFillColor(sf::Color::Green);
-
-	while (window.isOpen())
+	setup();
+	while (window.isOpen() || handler.getStatus())
 	{
-		sf::Event event;
-		while (window.pollEvent(event))
-		{
-			if (event.type == sf::Event::Closed)
-				window.close();
-		}
-
-		window.clear();
-		handler.drawGame();
-		window.draw(shape);
-		window.display();
+		draw();
 	}
-
 	return 0;
 }

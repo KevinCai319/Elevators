@@ -6,3 +6,6 @@ void GameHandler::drawGame() {
 	MainLayer.drawLayer();
 	UI.drawLayer();
 }
+GameHandler::~GameHandler() {
+	
+}

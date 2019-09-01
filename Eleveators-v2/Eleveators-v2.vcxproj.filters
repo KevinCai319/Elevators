@@ -16,6 +16,15 @@
     <Filter Include="Source Files\GameLib">
       <UniqueIdentifier>{98a079b3-53dd-4047-98df-a06cfd6c8e75}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Scenes">
+      <UniqueIdentifier>{d66dfbe8-cbf5-4418-939c-5bf7d3faa846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Visual Affects">
+      <UniqueIdentifier>{f1ebd4d1-54b6-4279-81b3-c3c9b4c6c8a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Geom">
+      <UniqueIdentifier>{76ea3a12-db93-49c1-870d-e5d081d9d027}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -33,6 +42,15 @@
     <ClCompile Include="Physical.cpp">
       <Filter>Source Files\GameLib</Filter>
     </ClCompile>
+    <ClCompile Include="DebugScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneHandler.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -48,6 +66,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

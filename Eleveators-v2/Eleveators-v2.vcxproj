@@ -135,18 +135,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DebugScene.cpp" />
     <ClCompile Include="GameHandler.cpp" />
     <ClCompile Include="GameLayer.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Physical.cpp" />
+    <ClCompile Include="SceneHandler.cpp" />
+    <ClCompile Include="Scene.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DebugScene.h" />
     <ClInclude Include="GameHandler.h" />
     <ClInclude Include="GameLayer.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="Physical.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneHandler.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
