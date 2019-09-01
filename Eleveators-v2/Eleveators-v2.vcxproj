@@ -135,6 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cursor.cpp" />
     <ClCompile Include="DebugScene.cpp" />
     <ClCompile Include="GameHandler.cpp" />
     <ClCompile Include="GameLayer.cpp" />
@@ -145,6 +146,7 @@
     <ClCompile Include="Scene.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cursor.h" />
     <ClInclude Include="DebugScene.h" />
     <ClInclude Include="GameHandler.h" />
     <ClInclude Include="GameLayer.h" />

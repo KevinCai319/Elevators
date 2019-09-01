@@ -19,11 +19,20 @@
     <Filter Include="Source Files\Scenes">
       <UniqueIdentifier>{d66dfbe8-cbf5-4418-939c-5bf7d3faa846}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Visual Affects">
-      <UniqueIdentifier>{f1ebd4d1-54b6-4279-81b3-c3c9b4c6c8a4}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Geom">
       <UniqueIdentifier>{76ea3a12-db93-49c1-870d-e5d081d9d027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other Assets">
+      <UniqueIdentifier>{de6fa198-be8c-4b1e-874e-353419b55c0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameLib">
+      <UniqueIdentifier>{1f2c1d0c-cb94-4519-b7b9-7f8c9d3ce7ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scenes">
+      <UniqueIdentifier>{4e20a3c5-0eb5-4b7e-ac59-e6fdba9beeb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Other Assets">
+      <UniqueIdentifier>{d333d701-71c4-471d-87e6-c8fe6df8df16}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -51,31 +60,37 @@
     <ClCompile Include="Scene.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
+    <ClCompile Include="Cursor.cpp">
+      <Filter>Source Files\Other Assets</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GameHandler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GameLayer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Physical.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\GameLib</Filter>
     </ClInclude>
     <ClInclude Include="GameObject.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLayer.h">
+      <Filter>Header Files\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Physical.h">
+      <Filter>Header Files\GameLib</Filter>
     </ClInclude>
     <ClInclude Include="DebugScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneHandler.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Scenes</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneHandler.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Cursor.h">
+      <Filter>Header Files\Other Assets</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SCENEHANDLER_H
+#define SCENEHANDLER_H
 #include <unordered_map>
 #include "Scene.h"
 class SceneHandler{
@@ -15,4 +16,4 @@ private:
 	bool isRunning = 1;
 	void start();
 };
-
+#endif

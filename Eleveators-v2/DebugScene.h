@@ -1,10 +1,11 @@
-#pragma once
+#ifndef DEBUGSCENE_H
+#define DEBUGSCENE_H
 #include "GameHandler.h"
 #include "Scene.h"
-class DebugScene : Scene
+class DebugScene : public Scene
 {
 public:
-	GameHandler sceneRunner;
+	
 
 };
-
+#endif

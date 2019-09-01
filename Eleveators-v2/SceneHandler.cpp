@@ -1,4 +1,5 @@
 #include "SceneHandler.h"
+#include "DebugScene.h"
 SceneHandler::SceneHandler()
 {
 	start();
@@ -11,6 +12,13 @@ void SceneHandler::switchScene()
 {
 	switch (currentState) {
 		case Scene::DEBUG:
+			RunningScene = DebugScene();
+			break;
+		case Scene::TITLE:
+			break;
+		case Scene::LEVEL:
+			break;
+		case Scene::CREDITS:
 			break;
 		default:
 			break;
