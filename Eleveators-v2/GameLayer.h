@@ -14,7 +14,6 @@ public:
 	void drawLayer();
 	void add(GameObject& item);
 	void shiftTranslation(sf::Vector2<float> shift);
-private:
 	std::vector<GameObject*> objects{};
 };
 struct GameObject {

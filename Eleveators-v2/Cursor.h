@@ -7,11 +7,12 @@ class Cursor : public Physical
 {
 public:
 	Cursor();
-	sf::Mouse mouse; 
+	sf::Mouse mouse;
 	sf::ConvexShape cursor;
 	void draw();
 	void update();
 private:
+	const float CURSOR_SCALE = 2.0f;
 
 };
 #endif

@@ -9,7 +9,7 @@ GameObject::GameObject(GameLayer& layer)
 }
 GameObject::~GameObject() 
 {
-	
+	//TODO: remove this from layer
 }
 void GameObject::setLayer(GameLayer& layer)
 {
