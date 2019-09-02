@@ -1,9 +1,8 @@
 #include "main.h"
 #include <iostream>
-
-
+sf::RenderWindow window(sf::VideoMode(1920, 1080), "SFML works!");
 void setup() {
-	
+	settings.antialiasingLevel = 8;
 	shape.setFillColor(sf::Color::Green);
 }
 void draw() {

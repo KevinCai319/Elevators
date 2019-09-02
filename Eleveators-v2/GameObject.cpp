@@ -11,7 +11,11 @@ GameObject::~GameObject()
 {
 	
 }
+void GameObject::setLayer(GameLayer& layer)
+{
+	this->layer = layer;
+}
 void GameObject::update() 
 {
-
+	std::cout << "setLayer";
 }

@@ -10,9 +10,10 @@ void SceneHandler::start() {
 }
 void SceneHandler::switchScene()
 {
+	delete RunningScene;
 	switch (currentState) {
-		case Scene::DEBUG:
-			RunningScene = DebugScene();
+	case Scene::DEBUG:
+			RunningScene = new DebugScene;
 			break;
 		case Scene::TITLE:
 			break;
@@ -25,7 +26,7 @@ void SceneHandler::switchScene()
 	}
 }
 void SceneHandler::tick() {
-	currentState = RunningScene.tick();
+	currentState = RunningScene->tick();
 	switch (currentState) {
 		case Scene::CURRENT:
 			return;

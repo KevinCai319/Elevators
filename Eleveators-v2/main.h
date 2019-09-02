@@ -1,10 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <SFML/Graphics.hpp>
+#include "Global.h"
 #include "SceneHandler.h"
-sf::RenderWindow window(sf::VideoMode(1920, 1080), "SFML works!");
 SceneHandler handler;
 sf::CircleShape shape(100.f);
+sf::ContextSettings settings;
 
 void setup();
 void draw();

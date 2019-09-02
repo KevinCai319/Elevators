@@ -1,10 +1,7 @@
-﻿  DebugScene.cpp
-  Scene.cpp
-  SceneHandler.cpp
-  main.cpp
+﻿  Cursor.cpp
   Generating code
-  95 of 100 functions (95.0%) were compiled, the rest were copied from previous compilation.
-    7 functions were new in current compilation
+  1 of 116 functions ( 0.9%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   Eleveators-v2.vcxproj -> C:\Users\k1029\git\Elevators\x64\Release\Eleveators-v2.exe

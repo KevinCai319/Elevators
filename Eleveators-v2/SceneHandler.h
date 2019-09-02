@@ -5,7 +5,7 @@
 class SceneHandler{
 public:
 	Scene::SceneType currentState = DEFAULT_SCENE;
-	Scene RunningScene;
+	Scene* RunningScene;
 	SceneHandler();
 	void switchScene();
 	int getStatus() const;
