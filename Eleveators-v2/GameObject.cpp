@@ -5,7 +5,7 @@ GameObject::GameObject()
 }
 GameObject::GameObject(GameLayer& layer) 
 {
-	this->layer = layer;
+	this->layer = &layer;
 }
 GameObject::~GameObject() 
 {
@@ -13,7 +13,7 @@ GameObject::~GameObject()
 }
 void GameObject::setLayer(GameLayer& layer)
 {
-	this->layer = layer;
+	this->layer = &layer;
 }
 void GameObject::update() 
 {

@@ -1,14 +1,18 @@
 #ifndef PHYSICAL_H
 #define PHYSICAL_H
 #include "GameObject.h"
-#include <SFML\Graphics\ConvexShape.hpp>
+#include <SFML\Graphics\Shape.hpp>
 #include "Global.h"
 class Physical : public GameObject {
 public:
+	Physical();
 	~Physical();
-	sf::ConvexShape shape[5];
+	std::vector<sf::Shape*> shape;
 	sf::Vector2<float> relativePosition;
 	sf::Vector2<float> position;
+	void reserve(int size);
+	void addObject(sf::Shape* shape);
+	void setObject(int index, sf::Shape* item);
 	virtual void update();
 	virtual void draw() = 0;
 };

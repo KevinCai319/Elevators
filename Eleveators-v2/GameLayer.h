@@ -17,7 +17,7 @@ public:
 	std::vector<GameObject*> objects{};
 };
 struct GameObject {
-	GameLayer layer;
+	GameLayer* layer;
 	GameObject();
 	GameObject(GameLayer& layer);
 	~GameObject();

@@ -34,6 +34,21 @@
     <Filter Include="Header Files\Other Assets">
       <UniqueIdentifier>{d333d701-71c4-471d-87e6-c8fe6df8df16}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Audio">
+      <UniqueIdentifier>{1aedb63e-050b-4a9f-8c19-5cd895e3eab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Geom\Lines">
+      <UniqueIdentifier>{844fb80e-5e0b-4dde-b6f9-961f3594cc79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Central">
+      <UniqueIdentifier>{9b928212-fb2a-477b-8fdf-9c0fcfe67b9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Geom">
+      <UniqueIdentifier>{988346e2-be24-4df6-b706-32f4c2a00d17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Geom\Lines">
+      <UniqueIdentifier>{905b9376-40aa-47de-b05d-ee60885ae402}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -54,20 +69,23 @@
     <ClCompile Include="DebugScene.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
-    <ClCompile Include="SceneHandler.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
     <ClCompile Include="Cursor.cpp">
       <Filter>Source Files\Other Assets</Filter>
     </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneHandler.cpp">
+      <Filter>Source Files\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="LineTransitioner.cpp">
+      <Filter>Source Files\Geom\Lines</Filter>
+    </ClCompile>
+    <ClCompile Include="Line.cpp">
+      <Filter>Source Files\Geom\Lines</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="main.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="GameHandler.h">
       <Filter>Header Files\GameLib</Filter>
     </ClInclude>
@@ -93,7 +111,24 @@
       <Filter>Header Files\Other Assets</Filter>
     </ClInclude>
     <ClInclude Include="Global.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Central</Filter>
     </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files\Central</Filter>
+    </ClInclude>
+    <ClInclude Include="LineTransitioner.h">
+      <Filter>Header Files\Geom\Lines</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>Header Files\Geom\Lines</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Kubbi - Void pt. 2.mp3">
+      <Filter>Resource Files\Audio</Filter>
+    </Media>
+    <Media Include="ParagonX9 - Chaoz Fantasy.mp3">
+      <Filter>Resource Files\Audio</Filter>
+    </Media>
   </ItemGroup>
 </Project>

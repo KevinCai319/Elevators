@@ -2,6 +2,7 @@
 #define DEBUGSCENE_H
 #include "GameHandler.h"
 #include "Cursor.h"
+#include "Line.h"
 #include "Scene.h"
 class DebugScene : public Scene
 {
@@ -10,5 +11,6 @@ public:
 	SceneType tick();
 private:
 	Cursor cursor;
+	Line line;
 };
 #endif
