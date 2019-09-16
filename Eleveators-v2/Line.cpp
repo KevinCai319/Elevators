@@ -12,7 +12,7 @@ Line::Line(sf::Vector2f v1, sf::Vector2f v2, float thick) {
 	end = sf::CircleShape(thickness);
 	end.setPosition(getRealPoint(endPoint));
 	calcLine();
-	addObject(&start);
+	//addObject(&start);
 	//addObject(&line);
 	//addObject(&end);
 }
@@ -47,12 +47,12 @@ void Line::calcDistance() {
 	distance = (end.getPosition() - start.getPosition());
 }
 void Line::update() {
-	resetEnd(static_cast<sf::Vector2f>(mouse.getPosition(window)));
+	resetEnd(static_cast<sf::Vector2f>(mouse.getPosition(*(layer->window))));
 	draw();
 	Physical::update();
 }
 void Line::draw() {
-	//window.draw(start);
-	//window.draw(line);
-	//window.draw(end);
+	render(&start);
+	render(&line);
+	render(&end);
 }

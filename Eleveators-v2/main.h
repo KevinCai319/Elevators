@@ -1,12 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <SFML/Graphics.hpp>
-#include "Global.h"
+#include "WindowRef.h"
 #include "SceneHandler.h"
-SceneHandler handler;
-sf::CircleShape shape(100.f);
+SceneHandler* handler;
 sf::ContextSettings settings;
-
-void setup();
-void draw();
+void setup(WindowRef window);
+void draw(WindowRef window);
 #endif

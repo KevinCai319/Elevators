@@ -1,8 +1,12 @@
 #include "SceneHandler.h"
 #include "DebugScene.h"
-SceneHandler::SceneHandler()
+SceneHandler::SceneHandler(WindowRef window)
 {
+	setWindow(window);
 	start();
+}
+void SceneHandler::setWindow(WindowRef window) {
+	this->window = window;
 }
 void SceneHandler::start() {
 	currentState = START_SCENE;
@@ -13,7 +17,7 @@ void SceneHandler::switchScene()
 	delete RunningScene;
 	switch (currentState) {
 	case Scene::DEBUG:
-			RunningScene = new DebugScene;
+			RunningScene = new DebugScene(window);
 			break;
 		case Scene::TITLE:
 			break;

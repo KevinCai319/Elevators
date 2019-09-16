@@ -3,9 +3,11 @@
 #include "GameHandler.h"
 struct Scene {
 public:
-	Scene();
+	WindowRef window;
+	Scene(WindowRef ref);
 	~Scene();
-	GameHandler handler;
+	void setWindow(WindowRef window);
+	GameHandler* handler;
 	enum SceneType {
 		DEBUG, TITLE, LEVEL, CREDITS, CURRENT, STOP
 	};

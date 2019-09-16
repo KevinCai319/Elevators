@@ -2,7 +2,7 @@
 #define PHYSICAL_H
 #include "GameObject.h"
 #include <SFML\Graphics\Shape.hpp>
-#include "Global.h"
+//#include "WindowRef.h"
 class Physical : public GameObject {
 public:
 	Physical();
@@ -13,6 +13,7 @@ public:
 	void reserve(int size);
 	void addObject(sf::Shape* shape);
 	void setObject(int index, sf::Shape* item);
+	void render(sf::Shape* shape);
 	virtual void update();
 	virtual void draw() = 0;
 };

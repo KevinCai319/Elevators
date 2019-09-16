@@ -2,11 +2,14 @@
 #define SCENEHANDLER_H
 #include <unordered_map>
 #include "Scene.h"
+#include "WindowRef.h"
 class SceneHandler{
 public:
+	WindowRef window;
 	Scene::SceneType currentState = DEFAULT_SCENE;
 	Scene* RunningScene;
-	SceneHandler();
+	SceneHandler(WindowRef window);
+	void setWindow(WindowRef window);
 	void switchScene();
 	int getStatus() const;
 	void tick();

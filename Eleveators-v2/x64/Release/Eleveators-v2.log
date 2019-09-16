@@ -1,9 +1,8 @@
-﻿  DebugScene.cpp
-  Line.cpp
-C:\Users\k1029\git\Elevators\Eleveators-v2\Line.cpp(41,58): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+﻿  Line.cpp
+C:\Users\k1029\git\Elevators\Eleveators-v2\Line.cpp(40,58): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
   Generating code
-  2 of 173 functions ( 1.2%) were compiled, the rest were copied from previous compilation.
+  0 of 188 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    2 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   Eleveators-v2.vcxproj -> C:\Users\k1029\git\Elevators\x64\Release\Eleveators-v2.exe

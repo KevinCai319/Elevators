@@ -3,10 +3,12 @@
 #include "GameLayer.h"
 class GameHandler {
 	public:
-		GameLayer UI;
-		GameLayer MainLayer;
-		GameLayer Background;
-		GameHandler();
+		WindowRef window;
+		GameLayer* UI;
+		GameLayer* MainLayer;
+		GameLayer* Background;
+		GameHandler(WindowRef ref);
+		void setWindow(WindowRef window);
 		~GameHandler();
 		void drawGame();
 };

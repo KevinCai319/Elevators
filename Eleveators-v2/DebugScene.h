@@ -7,7 +7,8 @@
 class DebugScene : public Scene
 {
 public:
-	DebugScene();
+	WindowRef window;
+	DebugScene(WindowRef ref);
 	SceneType tick();
 private:
 	Cursor cursor;

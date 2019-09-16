@@ -153,13 +153,13 @@
     <ClInclude Include="GameHandler.h" />
     <ClInclude Include="GameLayer.h" />
     <ClInclude Include="GameObject.h" />
-    <ClInclude Include="Global.h" />
     <ClInclude Include="Line.h" />
     <ClInclude Include="LineTransitioner.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="Physical.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneHandler.h" />
+    <ClInclude Include="WindowRef.h" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="Kubbi - Void pt. 2.mp3" />

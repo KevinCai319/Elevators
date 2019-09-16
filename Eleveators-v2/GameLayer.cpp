@@ -1,6 +1,6 @@
 #include "GameLayer.h"
-GameLayer::GameLayer() {
-	
+GameLayer::GameLayer(WindowRef window) {
+	setWindow(window);
 }
 
 GameLayer::GameLayer(sf::Vector2<float> translation) {
@@ -18,7 +18,9 @@ void GameLayer::add(GameObject& item) {
 	objects.push_back(&item);
 	item.setLayer(*this);
 }
-
+void GameLayer::setWindow(WindowRef window) {
+	this->window = window; 
+}
 void GameLayer::shiftTranslation(sf::Vector2<float> shift) {
 	translation += shift;
 }

@@ -1,5 +1,4 @@
 #include "Physical.h"
-#include "Global.h"
 Physical::Physical(){
 
 }
@@ -7,8 +6,11 @@ void Physical::update() {
 	position = relativePosition + layer->translation;
 	for (sf::Shape* poly : shape) {
 		poly->setOrigin(layer->translation);
-		window.draw(*poly);
+		render(poly);
 	}
+}
+void Physical::render(sf::Shape* shape) {
+	layer->window->draw(*shape);
 }
 void Physical::reserve(int size) {
 	shape.reserve(size);
